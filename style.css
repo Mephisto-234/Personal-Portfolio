@@ -3,6 +3,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
 .nav-bar {
   overflow: hidden;
   background-color: #333;
@@ -76,13 +84,17 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .nav-bar a:not(:first-child), .dropdown .dropbtn {
+  .nav-bar a, .dropdown .dropbtn {
     display: none;
   }
   .nav-bar a.icon {
     float: right;
     display: block;
+    background-color: #333;
   }
+  .logo {
+    display: none;
+  }  
 }
 
 @media screen and (max-width: 600px) {
