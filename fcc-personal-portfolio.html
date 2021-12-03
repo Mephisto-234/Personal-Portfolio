@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0c36770179.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <main>
+        <!-- <section class="nav-bar" id="navbar">
+            <img src="images/m234-logo.png" alt="" class="logo">
+            <ul>
+                <a href="#welcome-section" class="nav-item">Home</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#about-me" class="nav-item">About Me</a>
+                <a href="javascript:void(0);" class="icon" onclick="navButton()">
+                    <img src="images/m234-logo.png" alt="" class="icon-logo">
+            </ul>
+        </section> -->
+
+        <section class="nav-bar" id="navBar">
+            <a href="#welcome-sectoin" class="active">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Project 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> 
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navButton()">&#9776;</a>
+        </section>
+
+        <section class="welcome-section" id="welcome-section">
+            <h1>Hi, I am Steve</h1>
+            <p>Web Dev, Gamer, & Lifetime Learner</p>
+        </section>
+
+        <section class="project-section" id="projects">
+            <article class="project-tile">
+                <h3 class="tile-title">Tribute Page</h3>
+                <img src="images/farley-trib.png" alt="Screenshot of Tribute Page">
+            </article>
+            <article class="project-tile">
+                <h3 class="tile-title">Crypto Use Survey</h3>
+                <img src="images/survey.png" alt="Cryptocurrency Use Survey">
+            </article>
+            <article class="project-tile">
+                <h3 class="tile-title">Review Carousel</h3>
+                <img src="images/review-carousel.png" alt="Social Media Review Carousel">
+            </article>
+            <article class="project-tile">
+                <h3 class="tile-title">Tech Doc</h3>
+                <img src="images/tech-doc.png" alt="Technical Documentation Page">
+            </article>
+            <article class="project-tile">
+                <h3 class="tile-title">Landing Page</h3>
+                <img src="images/pop-it.png" alt="Pop-it Landing Page">
+            </article>
+            <article class="project-tile">
+                <h3 class="tile-title">Rock Paper Scissors</h3>
+                <img src="images/rps-game.png" alt="Rock, Paper, Scissors, game">
+            </article>
+        </section>
+        <footer id="contact-us">
+            <div class="footer-style">
+                <div class="footer-logo">
+                    <img src="./images/m234-logo.png" alt="&ltm234>">
+                </div>
+                <div class="contacts">
+                    <!-- Fill in Social Media Links -->
+                    <a href="https://twitter.com/Mephisto234" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://dev.to/mephisto234" class="social-link">
+                        <i class="fab fa-dev"></i>
+                    </a>
+                    <a href="https://codepen.io/mephisto-234" class="social-link">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                    <a href="https://www.freecodecamp.org/mephisto234" class="social-link">
+                        <i class="fab fa-free-code-camp"></i>
+                    </a>
+                    <a href="https://discord.gg/kvg3saNVeZ" class="social-link">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
