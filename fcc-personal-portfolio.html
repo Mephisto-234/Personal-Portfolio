@@ -9,96 +9,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/0c36770179.js" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
 </head>
 <body>
     <main>
-        <!-- <section class="nav-bar" id="navbar">
-            <img src="images/m234-logo.png" alt="" class="logo">
-            <ul>
-                <a href="#welcome-section" class="nav-item">Home</a>
-                <a href="#projects" class="nav-item">Projects</a>
-                <a href="#about-me" class="nav-item">About Me</a>
-                <a href="javascript:void(0);" class="icon" onclick="navButton()">
-                    <img src="images/m234-logo.png" alt="" class="icon-logo">
-            </ul>
-        </section> -->
-
-        <section class="nav-bar" id="navBar">
-            <img src="images/m234-logo.png" alt="" class="logo">
-            <nav>
-                <a href="#welcome-sectoin" class="active">Home</a>
-                <div class="dropdown">
-                <button class="dropbtn">Project 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                </div> 
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="navButton()"><img src="images/m234-logo.png" alt="" class="icon-logo"></a>
+        <div class="nav-bar">
+            <h3 class="nav-title">&lt;m234></h3>
+            <nav id="navBar">
+                <a href="#welcome-section" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
             </nav>
-        </section>
+        </div>
 
         <section class="welcome-section" id="welcome-section">
-            <h1>Hi, I am Steve</h1>
-            <p>Web Dev, Gamer, & Lifetime Learner</p>
+            <h2 class="intro">Hi, I am</h2>
+            <h1 class="name">Steve</h1>
+            <p>Web Developer, Gamer, & Lifetime Learner</p>
         </section>
 
         <section class="project-section" id="projects">
             <article class="project-tile">
                 <h3 class="tile-title">Tribute Page</h3>
-                <img src="images/farley-trib.png" alt="Screenshot of Tribute Page">
+                <img src="images/farley-trib.png" alt="Screenshot of Tribute Page" class="project-img">
             </article>
             <article class="project-tile">
                 <h3 class="tile-title">Crypto Use Survey</h3>
-                <img src="images/survey.png" alt="Cryptocurrency Use Survey">
+                <img src="images/survey.png" alt="Cryptocurrency Use Survey" class="project-img">
             </article>
             <article class="project-tile">
                 <h3 class="tile-title">Review Carousel</h3>
-                <img src="images/review-carousel.png" alt="Social Media Review Carousel">
+                <img src="images/review-carousel.png" alt="Social Media Review Carousel" class="project-img">
             </article>
             <article class="project-tile">
                 <h3 class="tile-title">Tech Doc</h3>
-                <img src="images/tech-doc.png" alt="Technical Documentation Page">
+                <img src="images/tech-doc.png" alt="Technical Documentation Page" class="project-img">
             </article>
             <article class="project-tile">
                 <h3 class="tile-title">Landing Page</h3>
-                <img src="images/pop-it.png" alt="Pop-it Landing Page">
+                <img src="images/pop-it.png" alt="Pop-it Landing Page" class="project-img">
             </article>
             <article class="project-tile">
                 <h3 class="tile-title">Rock Paper Scissors</h3>
-                <img src="images/rps-game.png" alt="Rock, Paper, Scissors, game">
+                <img src="images/rps-game.png" alt="Rock, Paper, Scissors, game" class="project-img">
             </article>
         </section>
-        <footer id="contact-us">
+        <footer id="about">
             <div class="footer-style">
                 <div class="footer-logo">
                     <img src="./images/m234-logo.png" alt="&ltm234>">
                 </div>
                 <div class="contacts">
                     <!-- Fill in Social Media Links -->
-                    <a href="https://twitter.com/Mephisto234" class="social-link">
+                    <a href="https://twitter.com/Mephisto234" class="profile-link">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://dev.to/mephisto234" class="social-link">
+                    <a href="https://dev.to/mephisto234" class="profile-link">
                         <i class="fab fa-dev"></i>
                     </a>
-                    <a href="https://codepen.io/mephisto-234" class="social-link">
+                    <a href="https://codepen.io/mephisto-234" class="profile-link">
                         <i class="fab fa-codepen"></i>
                     </a>
-                    <a href="https://www.freecodecamp.org/mephisto234" class="social-link">
+                    <a href="https://www.freecodecamp.org/mephisto234" class="profile-link">
                         <i class="fab fa-free-code-camp"></i>
                     </a>
-                    <a href="https://discord.gg/kvg3saNVeZ" class="social-link">
+                    <a href="https://discord.gg/kvg3saNVeZ" class="profile-link">
                         <i class="fab fa-discord"></i>
                     </a>
                 </div>
             </div>
         </footer>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
