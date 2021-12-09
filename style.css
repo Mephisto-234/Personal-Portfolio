@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans:wght@300;700&family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Roboto+Slab:wght@100;400;700&display=swap');
+
+/* 
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Slab', serif;
+*/
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #f3f1f3;
 }
 
@@ -11,15 +15,16 @@ nav {
 }
 
 .nav-title {
+  font-family: 'Merriweather', serif;
   float: left;
   color: #000;
   font-size: 24px;
   margin-left: 25px;
   margin-top: 25px;
-  font-family: 'Cairo';
 }
 
 .nav-bar {
+  font-family: 'Roboto Slab', serif;
   overflow: hidden;
   background-color: #8f9ca3;
   position: fixed;
@@ -41,6 +46,7 @@ nav {
 nav a.active {
   background-color: #f3f1f3;
   color: #5a2d81;
+  
 }
 
 nav a.active a::before {
@@ -50,15 +56,72 @@ nav a.active a::before {
 .nav-bar a:hover {
   background-color: #cecece;
   color: #5a2d81;
+  text-shadow: 0 0 5px #8f5bcf;
 }
 
-.welcome-section {
+.welcome-section  {
   height: 100vh;
-  margin-top: 70px;
+  margin-top: 25%;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: #f3f1f3;
+  color: #5a2d81;
+  margin: 0;
+  text-align: center;
+  padding: 20px 55px;
+  border-radius: 10px;
+}
+
+.msg-block {
+  background-color: #8f9ca3;
+  margin: 25% 15%;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #5a2d81;
+}
+
+.welcome-msg {
+  background-color: #f3f1f3;
+  color: #5a2d81;
+  margin: 0;
+  text-align: center;
+  padding: 20px 55px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.welcome-logo {
+  font-family: 'Merriweather', serif;
+  background-color: #000;
+  color: #f3f1f3;
+  margin: 0 22%;
+  padding: 8px 0;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.welcome-services {
+  background-color: #5a2d81;
+  color: #f3f1f3;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  box-shadow: 0 1px 10px #000;
 }
 
 .project-section {
   height: 100vh;
+  background-color: #8f9ca3;
+  color: #000;
+  margin: 0 auto;
+  align-items: center;
+  
+  display: block;
+}
+
+.project-tile {
+  display: inline-block;
+  
 }
 
 .project-img {
@@ -69,7 +132,7 @@ section {
   padding: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .nav-bar a {
     font-size: 14px;
   }
@@ -78,8 +141,7 @@ section {
     margin-left: 20px;
     margin-top: 26px;
   }
-  .welcome-msg {
-    margin-top: 50%;
-    margin-left: auto;
-  }
+  .msg-block {
+    margin: 50% 5%;
+    padding: 25px;
 }
