@@ -128,6 +128,11 @@ nav a.active a::before {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.projects a {
+  text-decoration: none;
+  color: #000;
+}
+
 .section-title {
   background-color: #f3f1f3;
   color: #5a2d81;
@@ -160,6 +165,26 @@ nav a.active a::before {
 
 .footer-section {
   font-family: 'Merriweather', serif;
+  background-color: #000;
+  color: #fff;
+  height: 200px;
+  padding: 2vw;
+}
+
+.logo img {
+  float: left;
+  width: 15vw;
+}
+
+.contact-bar {
+  float: right;
+  text-align: right;
+}
+
+.profile-link {
+  font-size: 2vw;
+  padding: 5px;
+  text-decoration: none;
 }
 
 
@@ -172,5 +197,13 @@ nav a.active a::before {
     font-size: 18px;
     margin-left: 20px;
     margin-top: 26px;
+  }
+  .profile-link {
+    font-size: 4vw;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .logo img {
+    width: 30vw;
   }
 }
