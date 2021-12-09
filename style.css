@@ -10,6 +10,7 @@ body {
     background-color: #f3f1f3;
 }
 
+/* Navigation */
 nav {
   float: right;
 }
@@ -46,7 +47,6 @@ nav {
 nav a.active {
   background-color: #f3f1f3;
   color: #5a2d81;
-  
 }
 
 nav a.active a::before {
@@ -56,8 +56,10 @@ nav a.active a::before {
 .nav-bar a:hover {
   background-color: #cecece;
   color: #5a2d81;
-  text-shadow: 0 0 5px #8f5bcf;
+  
 }
+
+/* welcome setion */
 
 .welcome-section  {
   height: 100vh;
@@ -75,7 +77,7 @@ nav a.active a::before {
 .msg-block {
   background-color: #8f9ca3;
   margin: 25% 15%;
-  padding: 25px;
+  padding: 35px;
   border-radius: 20px;
   box-shadow: 0 0 50px #5a2d81;
 }
@@ -109,29 +111,51 @@ nav a.active a::before {
   box-shadow: 0 1px 10px #000;
 }
 
+/* projects section */
+
 .project-section {
   height: 100vh;
   background-color: #8f9ca3;
   color: #000;
   margin: 0 auto;
-  align-items: center;
-  
-  display: block;
+  text-align: center;
+  padding: 6vw;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-title {
+  background-color: #f3f1f3;
+  color: #5a2d81;
+  font-size: 34px;
+  margin: 0 8%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #030303;
+}
+
+.projects article:hover {
+  background-color: #f3f1f3;
+  color: #5a2d81;
+  box-shadow: 0 0 10px #5a2d81;
 }
 
 .project-tile {
-  display: inline-block;
-  
+  background-color: #cecece;
+  margin: 10%;
+  padding: 20px 5px;  
+  border-radius: 5px;
+  box-shadow: 0 0 5px #030303;
 }
 
 .project-img {
   width: 20vw;
 }
 
-section {
-  padding: 15px;
-}
 
+/* adjust based on screen-size: mobile */
 @media only screen and (max-width: 600px) {
   .nav-bar a {
     font-size: 14px;
@@ -142,6 +166,7 @@ section {
     margin-top: 26px;
   }
   .msg-block {
-    margin: 50% 5%;
-    padding: 25px;
+    margin: 60% 2%;
+    padding: 35px;
+  }
 }
