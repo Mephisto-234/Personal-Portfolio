@@ -114,7 +114,6 @@ nav a.active a::before {
 /* projects section */
 
 .project-section {
-  height: 100vh;
   background-color: #8f9ca3;
   color: #000;
   margin: 0 auto;
@@ -131,7 +130,7 @@ nav a.active a::before {
   background-color: #f3f1f3;
   color: #5a2d81;
   font-size: 34px;
-  margin: 0 8%;
+  margin: 0 8% 1% 8%;
   border-radius: 10px;
   box-shadow: 0 0 10px #030303;
 }
@@ -152,6 +151,12 @@ nav a.active a::before {
 
 .project-img {
   width: 20vw;
+}
+
+/* footer */
+
+.footer-section {
+  font-family: 'Merriweather', serif;
 }
 
 
